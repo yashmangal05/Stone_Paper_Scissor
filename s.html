@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Rock, Paper, Scissors</title>
+
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+    <link rel="stylesheet" href="s.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="attribution">
+            Coded by <a href="#">YASH MANGAL</a>.
+        </div>
+    </div>
+
+    <header id="header">
+        <div>
+            <img src="./img/logo.svg" id="heading">
+        </div>
+        <div id="score">
+            <div class="title">SCORE</div>
+            <button id="score1" class="btn btn-lg btn-light" disabled>0</button>
+        </div>
+    </header>
+
+    <main id="images">
+        <div id="paperOuterColour">
+            <div id="paper_img">
+                <img src="./img/icon-paper.svg" onclick="score('1')" class="paper">
+            </div>
+        </div>
+        <div id="scissorOuterColour">
+            <div id="scissors_img">
+                <img src="./img/icon-scissors.svg" onclick="score('2')" class="scissor">
+            </div>
+        </div>
+        <div id="rockOuterColour">
+            <div id="rock_img">
+                <img src="./img/icon-rock.svg" onclick="score('0')" class="stone">
+            </div>
+        </div>
+    </main>
+
+    <section id="contest">
+        <div class="userhand">
+            <h1>YOU PICKED</h1>
+            <div id="paperOuterColour">
+                <div id="paper_img">
+                    <img src="./img/icon-paper.svg" id="userPickImage" class="paper">
+                </div>
+            </div>
+        </div>
+        <div class="refree">
+            <div>
+                <h1 id="decision">YOU WIN</h1>
+            </div>
+            <button id="newGame" onclick="playAgain()">PLAY AGAIN</button>
+        </div>
+        <div class="comphand">
+            <h1 id="house">THE HOUSE PICKED</h1>
+            <div id="rockOuterColour">
+                <div id="rock_img">
+                    <img src="./img/icon-rock.svg" id="compPickImage" class="stone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <button id="rules" onclick="rules_show()">RULES</button>
+        <div id="rules_box">
+            <div id="div_header">
+                <h1 id="rules_heading">RULES</h1>
+                <img src="./img/icon-close.svg" id="close_img" onclick="rules_close()">
+            </div>
+            <img src="./img/image-rules.svg" id="rules_img">
+        </div>
+    </footer>
+
+    <script src="s.js"></script>
+
+</body>
+
+</html>

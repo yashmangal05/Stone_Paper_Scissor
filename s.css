@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background: radial-gradient(at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    border: 3px solid hsl(217, 16%, 45%);
+    margin: 0 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.4rem 1rem 2rem;
+    border-radius: 20px;
+}
+
+#score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 150%;
+}
+
+#title {
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    color: hsl(229, 64%, 46%);
+}
+
+#score1 {
+    background: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: hsl(229, 25%, 31%);
+}
+
+#images {
+    margin-top: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("./img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#paperOuterColour:hover,
+#scissorOuterColour:hover,
+#rockOuterColour:hover {
+    transform: translate3d(0px, -8px, 0px);
+}
+
+#paperOuterColour,
+#scissorOuterColour,
+#rockOuterColour {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#paper_img,
+#scissors_img,
+#rock_img {
+    background-color: #ffffff;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.stone,
+.paper,
+.scissor {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+#paperOuterColour {
+    background: linear-gradient(to bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    box-shadow: 0 0.5rem #0000004d, 0 0.5rem hsl(230, 89%, 65%);
+    margin-right: 8%;
+}
+
+#scissorOuterColour {
+    background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    box-shadow: 0 0.5rem #0000004d, 0 0.5rem hsl(40, 84%, 53%);
+}
+
+#rockOuterColour {
+    background: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    box-shadow: 0 0.5rem #0000004d, 0 0.5rem hsl(349, 70%, 56%);
+    margin-left: 37%;
+    margin-right: 37%;
+}
+
+footer button {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: none;
+    outline: none;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 0.6rem;
+    color: #ffffff;
+    padding: 0.6rem 2.5rem;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+#contest {
+    display: none;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+}
+
+#newGame {
+    background: white;
+    outline: none;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 0.6rem;
+    color: black;
+    padding: 0.6rem 2.5rem;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+#newGame:hover {
+    transform: translate3d(0px, -8px, 0px);
+}
+
+.refree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12%;
+}
+
+#contest h1 {
+    text-align: center;
+}
+
+#house {
+    margin-left: 103px;
+}
+
+#decision {
+    font-size: 2.5rem;
+    line-height: 2px;
+}
+
+#rules_box {
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#div_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem 1rem;
+    max-height: 50px;
+}
+
+#rules_heading {
+    color: black;
+    padding-top: 25px;
+    font-size: 1.5rem;
+    font-family: inherit;
+}
+
+#close_img {
+    height: 50%;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+#rules_img {
+    padding: 2rem 4rem;
+}
